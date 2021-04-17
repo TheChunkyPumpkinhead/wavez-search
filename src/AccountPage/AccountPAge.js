@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+import React from 'react';
+import './AccountPage.css';
+// import { Link } from 'react-router-dom';
 
-  <head>
-      <title>wavez-search-Accounts</title>
-      
-     
-                <button className='login-button' type='submit'>
-              Home
-              </button>
-     
-     
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-      <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-
-  <body>
+export default function AccountPage(props) {
+  return (
+ 
   
     <main role="main">
-      <header role="banner">
+        <header role="banner">
+        <button className='login-button' type='submit'>
+              Home
+              </button>
         <h1>Accounts</h1>
       
       </header>
@@ -26,9 +18,10 @@
        
         <form class='signup-form'>
            
-           </header>
+         
         <p>Waves Info</p>
         <button type='submit'>delete</button>
+        </form>
       </section>
       <section>
         <header>
@@ -37,13 +30,11 @@
         <p>Waves Info</p>
         <button type='submit'>delete</button>
       </section>
-      <section>
-        <header>
+     
+       
+</main>
 
+);
+}
 
-
-        
-      
-
-</html>
 

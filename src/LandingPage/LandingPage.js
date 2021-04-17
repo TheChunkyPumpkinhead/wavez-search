@@ -1,14 +1,10 @@
-< !DOCTYPE html >
-  <html lang="en">
+import React from 'react';
+import './LandingPage.css';
+// import { Link } from 'react-router-dom';
 
-    <head>
-      <title>wavez-search-Landing-page</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-          <link rel="stylesheet" type="text/css" href="main.css">
-  </head>
-
-          <body>
+export default function LandingPage(props) {
+  return (
+ 
 
             <main role="main">
               <header role="banner">
@@ -22,8 +18,11 @@
                 <p>Spot to record your spots!!</p>
                 <button type='submit'>Enter</button>
               </section>
-              <section>
-                <header>
+              </main>
+             
+              
       
 
-</html>
+
+);
+}

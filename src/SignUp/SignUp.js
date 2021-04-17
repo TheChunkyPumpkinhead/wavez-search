@@ -1,8 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+import React from 'react';
+import './SignUp.css';
+// import { Link } from 'react-router-dom';
 
-  <head>
-      <title>wavez-search-log-in</title>
+export default function SignUp(props) {
+  return (
+
+<main>
+      
       
       <button className='login-button' type='submit'>
               Sign Up
@@ -12,16 +16,14 @@
               </button>
      
      
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-      <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
+      
 
-  <body>
+
+
   
-    <main role="main">
+    
       <header role="banner">
-        <h1>Log In</h1>
+        <h1>Sign Up</h1>
       
       </header>
       <section>
@@ -39,17 +41,18 @@
             <button type='submit'>Sign Up</button>
         </form>
       </section>
-              
-        </header>
+              n
+    <section>
         <p>No Account?</p>
         <button type='submit'>Sign Up</button>
       </section>
-      <section>
-        <header>
-
-
-
-          Footer
+      </main>
       
 
-</html>
+
+
+     
+      
+
+);
+}

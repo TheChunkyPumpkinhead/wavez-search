@@ -1,3 +1,12 @@
+import React from 'react';
+import './Login.css';
+// import { Link } from 'react-router-dom';
+
+export default function Login(props) {
+  return (
+
+
+
 <main role="main">
       <header role="banner">
         <h1>Log In</h1>
@@ -21,16 +30,17 @@
         </form>
       </section>
               
-        </header>
+     
         <p>No Account?</p>
         <button type='submit'>Sign Up</button>
-      </section >
-  <section>
-    <header>
+   </main>
 
 
 
-      Footer
+
+
+   
        
 
-</html>
+);
+}
