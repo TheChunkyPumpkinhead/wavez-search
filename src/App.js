@@ -2,10 +2,10 @@
 import React from 'react';
 import { Route,Link} from 'react-router-dom';
 import './App.css';
-import AccountPage from './AccountPage/AccountPage';
-import LandingPage from './LandingPage/LandingPage';
+import Account from './Account/Account';
+import Home from './Home/Home';
 import Login from "./Login/Login";
-import SiteList from './SiteList/SiteList';
+import Notes from './Notes/Notes';
 import SignUp from './SignUp/SignUp';
 
 function App() {
@@ -16,31 +16,32 @@ function App() {
           <ul>
 
           <li>
-            <Link to="/">home</Link>
+            <Link to="/">Home</Link>
             </li>
             <li>
-            <Link to="/add">Add</Link>
+            <Link to="/login">Login</Link>
             </li>
             <li>
-            <Link to="/list">list</Link>
+            <Link to="/signup">Sign Up</Link>
             </li>
             <li>
-            <Link to="/contact">contact</Link>
+            <Link to="/notes">Notes</Link>
             </li>
             <li>
-            <Link to="/new">New</Link>
+            <Link to="/account">Account</Link>
             </li>
+            
           </ul>
         </nav>
 
       </header>
 
       <main>
-        <Route path ="/" exact component ={LandingPage} /> 
-        <Route path="/contact" component={Login} />
-        <Route path="/add" component={SiteList} />
-        <Route path="/list" component={AccountPage} /> 
-        <Route path="/new" component={SignUp} /> 
+        <Route path ="/" exact component ={Home} /> 
+        <Route path="/login" component={Login} />
+        <Route path="/notes" component={Notes} />
+        <Route path="/account" component={Account} /> 
+        <Route path="/signup" component={SignUp} /> 
 
 
          </main>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Login.css';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Login(props) {
   return (
@@ -26,13 +26,15 @@ export default function Login(props) {
               <label for="password">Password</label>
               <input type="password" name='password' id='password' />
             </div>
-            <button type='submit'>Sign Up</button>
+            <button type='submit'>Log in</button>
         </form>
       </section>
               
      
         <p>No Account?</p>
+        <Link to="/signup">
         <button type='submit'>Sign Up</button>
+        </Link>
    </main>
 
 

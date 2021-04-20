@@ -1,19 +1,13 @@
 import React from 'react';
 import './SignUp.css';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function SignUp(props) {
   return (
 
 <main>
       
-      
-      <button className='login-button' type='submit'>
-              Sign Up
-              </button>
-                <button className='login-button' type='submit'>
-              Home
-              </button>
+ 
      
      
       
@@ -44,7 +38,9 @@ export default function SignUp(props) {
               n
     <section>
         <p>No Account?</p>
-        <button type='submit'>Sign Up</button>
+        <Link to="/login">
+        <button type='submit'>Log In</button>
+        </Link>
       </section>
       </main>
       

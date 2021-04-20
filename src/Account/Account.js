@@ -1,16 +1,20 @@
 import React from 'react';
-import './AccountPage.css';
+import { Link } from 'react-router-dom';
+import './Account.css';
 // import { Link } from 'react-router-dom';
 
-export default function AccountPage(props) {
+export default function Account(props) {
   return (
  
   
+    
     <main role="main">
         <header role="banner">
+        <Link to = '/'>  
         <button className='login-button' type='submit'>
               Home
               </button>
+              </Link>
         <h1>Accounts</h1>
       
       </header>
