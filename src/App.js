@@ -3,7 +3,7 @@ import React from 'react';
 import { Route,Link} from 'react-router-dom';
 import './App.css';
 import Account from './Account/Account';
-import Home from './Home/Home';
+import Home from './Landing/Landing';
 import Login from "./Login/Login";
 import Notes from './WavesForm/WavesForm';
 import SignUp from './SignUp/SignUp';

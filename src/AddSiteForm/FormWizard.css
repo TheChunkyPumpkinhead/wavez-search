@@ -1,0 +1,93 @@
+/* MOBILE STYLING */
+/* Card with form wizard inside */
+.form-wizard-div {
+  background: white;
+  padding: .5em 0em 2em 0em;
+  margin: 3em;
+  border-radius: 1em;
+}
+
+/* form inputs div */
+.form-group {
+  display: flex; 
+  flex-direction: column; 
+}
+
+/* child of form group div */
+.form-control {
+  border: none;
+  border-radius: .3em;
+  font-size: .9em;
+  font-family: sans-serif;
+  padding: .3em;
+  margin: .3em;
+  background:aliceblue;
+}
+/* upload via cloudinary button  */
+.widget-btn {
+  background: #307E7C;
+  padding: .3em .6em;
+  color: white;
+  border: none;
+  border-radius: .3em;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight:bold;
+  margin: .3em;
+}
+/* navigate through form buttons */
+ .next-btn, .previous-btn, .add-btn, .sub-another-btn{
+  padding: .3em .6em;
+  background: darkslategray;
+  color: white;
+  border: none;
+  border-radius: .3em;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: .3em;
+}
+
+.add-btn {
+  background-color: #307E7C;
+  font-weight: bold;
+}
+
+
+/* displayed image after upload */
+.displayed-image {
+  max-width: 90%;
+  height: auto;
+  border-radius: .5em;
+}
+
+
+/* FULL SCREEN */
+@media screen and (min-width:800px) {
+  /* input boxes div */
+  .form-group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* form input div - child of form-group */
+  .form-control {
+    border: none;
+    border-radius: .3em;
+    font-size: .9em;
+    font-family: sans-serif;
+    padding: .3em;
+    margin: .3em;
+  }
+
+  /* image displayed after upload */
+  .displayed-image {
+    max-width: 100%;
+    border-radius: .5em;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+}
