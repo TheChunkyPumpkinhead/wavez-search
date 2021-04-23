@@ -5,7 +5,7 @@ import './App.css';
 import Account from './Account/Account';
 import Home from './Home/Home';
 import Login from "./Login/Login";
-import Notes from './Notes/Notes';
+import Notes from './WavesForm/WavesForm';
 import SignUp from './SignUp/SignUp';
 
 function App() {
