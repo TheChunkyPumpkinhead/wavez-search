@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import NoteForm from '../10.NoteForm/NoteForm';
+// import WavezForm from '../WavezForm/WavezForm';
 import config from '../config';
 import TokenService from '../services/token-service';
 import './Account.css';
@@ -49,7 +49,7 @@ class Account extends Component {
   }
 
 
-  //// DELTE FETCH ////////
+  //// DELTE ////////
   handleClickDelete = (commentId) => {
     // console.log(commentId);
     fetch(`${config.API_ENDPOINT}/comments/${commentId}`, {
@@ -85,8 +85,8 @@ class Account extends Component {
         <div className='accounts-page'>
 
           <header className='banner'>
-            <h1 className='account-header'>Your Bucket List</h1>
-            <p className='account-p'>Seclusion Awaits.</p>
+            <h1 className='account-header'>Your Sweetest Wave List</h1>
+            <p className='account-p'>The Wavez Await.</p>
           </header>
 
 
@@ -118,7 +118,7 @@ class Account extends Component {
                         </div>
                       );
                     })}
-                    <NoteForm locId={locByUser.id} />
+                    <WavezForm locId={locByUser.id} />
                   </div>
 
                 </div>

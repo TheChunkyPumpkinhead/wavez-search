@@ -1,7 +1,8 @@
-import React from 'react';
-import './Login.css';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import AuthApiService from '../Services/auth-api-service';
+import AuthApiService from '../services/auth-api-service';
+import TokenService from '../services/token-service';
+import './LogIn.css';
 
 
 class LogIn extends Component {
@@ -47,6 +48,7 @@ class LogIn extends Component {
     }
     return outputEmail;
   }
+
   validateLoginPassword(inputLoginPassword) {
     let outputLoginPassword = inputLoginPassword;
     let loginPasswordFormat = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{8,}$/;
@@ -57,51 +59,63 @@ class LogIn extends Component {
     return outputLoginPassword;
   }
 
+
+
+
+
   render() {
     const errorMessage = this.state.error ? (
       <p className='error-message'>{this.state.error}</p>) : (false);
 
+    return (
+      <main>
+        <section className='login-overlay' >
+          <div className="log-in-page">
+            <h1>Wavez Searching</h1>
+            <h2 className='log-in-header'>Log In</h2>
+          </div>
 
+          <div className="form-div">
+            <form className='login-form' onSubmit={this.handleSubmit}>
+              {errorMessage}
+              <label className='login-label'>Email
+              <input
+                  className="login-input"
+                  type="text"
+                  name='Johnny Utah'
+                  placeholder='JohnnyUtah@FBI.com'
+                  required
+                />
+              </label>
 
-return(
+              <label className='login-label'>Password
+              <input
+                  className='login-input'
+                  type='password'
+                  name='loginPassword'
+                  placeholder='Password1'
+                  required
+                />
+              </label>
 
-      <main role="main">
-        <header role="banner">
-          <h1>Log In</h1>
+              <button className='login-button' type='submit'>
+                Log In
+              </button>
 
-        </header>
-        <section>
-          <header>
-            <h3>Create an Account</h3>
-          </header>
-          <form class='signup-form'>
-
-            <div>
-              <label for="username">Username</label>
-              <input type="text" name='username' id='username' />
+            </form>
+            <div className="link-register-div">
+              <p align='right'> Don't Have An Account? <br></br>
+             <Link to="/signup" className="login-link"> Register </Link></p>
+              <p align='left'>Try The Site: <br></br> demo@demo.com <br></br>Password1</p>
             </div>
-            <div>
-              <label for="password">Password</label>
-              <input type="password" name='password' id='password' />
-            </div>
-            <button type='submit'>Log in</button>
-          </form>
+
+          </div>
         </section>
 
-
-        <p>No Account?</p>
-        <Link to="/signup">
-          <button type='submit'>Sign Up</button>
-        </Link>
       </main>
 
 
-
-
-
-
-
-);
+    );
   }
 
 }

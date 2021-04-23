@@ -1,0 +1,14 @@
+.nav-bar {
+  padding-top: 1em;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: bottom;
+  font-weight: bolder;
+}
+
+
+
+
