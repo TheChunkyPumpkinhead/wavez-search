@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import AuthApiService from '../services/auth-api-service';
 import TokenService from '../services/token-service';
-import './LogIn.css';
+import './Login.css';
 
 
 class LogIn extends Component {
@@ -82,7 +82,7 @@ class LogIn extends Component {
               <input
                   className="login-input"
                   type="text"
-                  name='Johnny Utah'
+                  name='loginUsername'
                   placeholder='JohnnyUtah@FBI.com'
                   required
                 />

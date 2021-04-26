@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import WavezForm from '../WavezForm/WavezForm';
+import WavezForm from '../WavezForm/WavezForm';
 import config from '../config';
 import TokenService from '../services/token-service';
 import './Account.css';

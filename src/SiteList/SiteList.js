@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import TokenService from '../services/token-service';
 import config from '../config';
 import './SiteList.css';
-import FormWizard from '../06.AddSiteForm/FormWizard';
-import Search from '../07.Search/Search';
-import StarRating from '../08.StarRating/StarRating';
+import FormWizard from '../AddSiteForm/FormWizard';
+// import Search from '../Search/Search';
+import StarRating from '../StarRating/StarRating';
 
 export default class SiteList extends Component {
   constructor(props) {
@@ -103,9 +103,9 @@ export default class SiteList extends Component {
             </div>
 
             {/* Filter the locations: */}
-            <div className='search-box-div'>
+            {/* <div className='search-box-div'>
               <Search />
-            </div>
+            </div> */}
 
           </section>
 

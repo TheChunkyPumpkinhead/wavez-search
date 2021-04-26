@@ -1,129 +1,74 @@
-import React, { Component } from 'react';
-// import ReactStars from "react-rating-stars-component";
-import config from '../config';
-import TokenService from '../services/token-service';
-import './StarRating.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { } from '@fortawesome/free-solid-svg-icons';
+/* MOBILE STYLING */
+
+/* container with the rating icons  */
+.stars-container {
+  display:flex;
+}
+
+/* size of icons */
+.font-awesome {
+  font-size: 2em;
+}
 
 
-class StarRating extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      rating: {},
-      errorMsg: null,
-    };
+/* whether or not the icons are filled in */
+.empty-star {
+  color:lightgray;
+  display:flex;
+}
+
+.full-star {
+  color: darkolivegreen;
+}
+
+
+/*  the actual ratings drop down   */
+.rating-select {
+  /* background: palevioletred; */
+  margin: 0em 0em 2em .5em;
+  align-items: center;
+  border-radius: .3em;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+
+/*ratings drop down section */
+.rating-select-div {
+  display: flex; 
+}
+
+
+/* dropdown submit button*/
+.rating-btn {
+  padding: .3em .6em;
+  background: #307E7C;
+  color: white;
+  border: none;
+  border-radius: .3em;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight:bold;
+  margin: 1em;
+/* figure out how to get button inline with the text! */
+}
+
+
+.rating-form {
+  padding: 1.5em;
+}
+
+
+/* FULL SCREEN STYLING  */
+@media screen and (min-width:600px){
+  /* entire ratings section icons + dropdown  */
+  .ratings {
+    padding: 3em 1em 0em 1em;
   }
-
-
-  componentDidMount() {
-    this.fetchRating();
+  
+  .rating-form {
+    display: flex;
+    justify-content: space-around;
   }
-
-  //get all ratings
-  fetchRating = () => {
-    let URL = `${config.API_ENDPOINT}/ratings/${this.props.id}`;
-
-    return fetch(URL, {
-      headers: {
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
-      }
-    })
-
-      .then((response) => response.json())
-      .then((data) => {
-        this.setState({
-          rating: data,
-        });
-      })
-      .catch((error) => console.log(error));
-  };
-
-
-
-  // post dropdown rating to db
-  postForm = (event) => {
-    event.preventDefault();
-    let URL = `${config.API_ENDPOINT}/ratings/${this.props.id}`;
-    let rating = event.target.ratings_select.value;
-
-    // console.log(rating, 'rating');
-
-    return fetch(URL, {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
-      },
-      'body': JSON.stringify({
-        stars: rating
-      }),
-    })
-      .then(res => {
-        if (!res.ok) {
-          this.setState({ errorMsg: res.statusText });
-        } else {
-          res.json();
-          window.location = '/list';
-        }
-      })
-      .then(this.fetchRating)
-      .catch(err => {
-        console.log(err);
-        this.setState({ errorMsg: err });
-      });
-  };
-
-
-
-
-
-  render() {
-    let rating = Math.round(parseInt(parseFloat(this.state.rating.average_rating))) || 1;
-
-    return (
-      <section className='ratings'>
-        <form onSubmit={this.postForm} className='rating-form'>
-
-          <div className='stars-container'>
-            <p>Average Rating:</p>
-            {[1, 2, 3, 4, 5].map(num => {
-              let star = rating >= num ? 'full-star' : 'empty-star';
-/* Find icon to go with app to go in curly brackets */
-              return (
-                <div className={star} key={num}>
-                  <FontAwesomeIcon icon={} className='font-awesome' />
-                </div>
-              );
-            })}
-          </div>
-
-          {/* leave a rating dropdown */}
-          <div className='rating-select-div'>
-            <p>Leave A Rating</p>
-
-
-            <select name='ratings_select' className='rating-select' aria-label='rating' >
-              {[1, 2, 3, 4, 5].map(num => {
-                return (
-                  <option
-                    key={num}
-                    value={num}
-                    aria-label='dropdown'
-                  >{num}
-                  </option>
-                );
-              })}
-            </select>
-            <button className='rating-btn'>Submit</button>
-          </div>
-
-        </form>
-      </section>
-    );
-
-  }
-};
-
-export default StarRating;
+  
+}
