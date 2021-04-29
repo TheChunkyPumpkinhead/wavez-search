@@ -1,49 +1,63 @@
-* {
-  box-sizing: border-box;
+/* MOBILE STYLE */
+/* background image */
+.login-overlay {
+  background-image: url('/src/images/wavez-search-2.jpeg');
+  background-size:cover;
+  border-radius: 1em;
+  display:flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  padding:10em;
 }
 
-body {
-  font-family: "Open Sans",
-  sans-serif;
-  font-size: 20px;
-  color: #444;
-  text-align: center;
-  line-height: 1.5;
+/* header text */
+.log-in-page {
+  color:white;
 }
 
-nav,
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  color:white;
+  margin-bottom: 1em;
+  font-weight: bold;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+.login-input {
+  margin-bottom: 1em;
+  border: none;
+  border-radius: .3em;
+  padding-left: .5em;
 }
 
-header {
-  padding: 45px 15px;
-}
+.login-button {
+  background:orangered;
+  padding: .3em .6em;
+  color: white;
+  border: none;
+  border-radius: .3em;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-weight:bold;
+  margin: .3em;
+  display: flex;
+  justify-content: center;
+  }
 
-section {
-  min-height: 200px;
-  padding: 30px 15px;
-  background-color: #bbb;
-}
 
-section:nth-child(even) {
-  background-color: #ddd;
-}
-
-p {
-  margin: 0 auto;
-  max-width: 650px;
-}
-
-p + p {
-  margin-top: 15px;
-}
+  @media screen and (min-width:600px){
+    /* background image */
+    .login-overlay {
+      background-size:cover;
+      padding:15em;
+    }
+  
+    /* header text */
+    .log-in-page {
+      margin: 1em;
+      padding: 2em;
+    } 
+  }
