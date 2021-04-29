@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import NoteForm from '../NoteForm/NoteForm';
+import WavezForm from '../WavezForm/WavezForm';
 
 it('renders App component without crashing', () => {
   const div = document.createElement("div");
   ReactDOM.render(
     <BrowserRouter>
-          <NoteForm />
+          <WavezForm />
     </BrowserRouter>
     ,div );
     ReactDOM.unmountComponentAtNode(div);
