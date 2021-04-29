@@ -9,6 +9,13 @@
   font-weight: bolder;
 }
 
+.nav-links {
+  color:black;
+}
+
+.nav-links:hover {
+  color: orangered;
+}
 
 
 
