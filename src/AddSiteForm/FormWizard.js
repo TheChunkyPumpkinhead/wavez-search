@@ -127,7 +127,7 @@ class FormWizard extends React.Component {
     // create the widget
     window.cloudinary.createUploadWidget(
       {
-        cloudName: 'secret-campsites',
+        cloudName: 'wavez-search',
         uploadPreset: 'k6ol9ng3',
       },
       (error, result) => {
@@ -150,7 +150,7 @@ class FormWizard extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h4 className='add-new-site-header'> Share Your Favorite Wilderness Retreat </h4>
+        <h4 className='add-new-site-header'> Show off that Sweet Surf Spot</h4>
         <p>Step {this.state.currentStep} </p>
 
         <form onSubmit={this.handleSubmit}>

@@ -70,7 +70,7 @@ class SignUp extends Component {
           <section className='sign-up-overlay'>
             <div className="sign-up-page">
 
-              <h1 className='sign-up-title'>Secret Camping </h1>
+              <h1 className='sign-up-title'>Wavez Search </h1>
 
               <div className="form-div-reg">
                 <h3 className="header">Sign Up</h3>
