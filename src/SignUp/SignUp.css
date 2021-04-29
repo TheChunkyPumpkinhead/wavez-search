@@ -1,6 +1,6 @@
 /*  MOBILE STYLING */
 .sign-up-overlay {
-  background-image: url('/src/images/sandiegocoast.jpeg');
+  /* background-image: url('/src/images/sandiegocoast.jpeg'); */
   background-size: cover;
   border-radius: 1em;
   display:flex; 

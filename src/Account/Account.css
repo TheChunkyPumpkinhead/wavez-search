@@ -2,7 +2,7 @@
 
  /* entire page and background */
  .accounts-page {
-  background-image: url('/src/images/wavez-search-5.jpg');
+  /* background-image: url('/src/images/wavez-search-5.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1em;
