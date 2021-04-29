@@ -1,0 +1,122 @@
+/* /////////////////MOBILE STYLING ////////////////////////////////////// */
+
+/* SEARCH FORM INPUT & BUTTON */
+
+/* box with input + button inside */
+.search-form {
+  /* flex:2; */
+  background: white;
+  padding: 2.5em;
+  margin: 3em;
+  border-radius: 1em;
+}
+
+/* input box & button */
+.search-input {
+  border: none;
+  border-radius: .3em;
+  font-size: .9em;
+  font-family: sans-serif;
+  padding: .3em;
+  margin: .3em;
+  background: aliceblue;
+}
+
+/* search input label */
+.search-label {
+  font-weight: bold;
+}
+
+/* search button */
+.search-button {
+  padding: .3em .6em;
+  background: orangered;
+  color: white;
+  border: none;
+  border-radius: .3em;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: .3em;
+}
+
+
+/* LIST OF RETURNED RESULTS */
+
+.search-results-list {
+  max-width: 50em;
+}
+/* results card with content + image + map */
+.search-list {
+  background:white;
+  margin: 1em 1em 0 1em;
+  border-radius:2em;
+  padding-bottom:2em;
+}
+
+/* images from returned search */
+.search-list-img {
+  max-width: 90%;
+  height: auto;
+  border-radius: .5em;
+}
+
+/* google map */
+.map-image-search-page {
+  max-width: 90%;
+  border-radius: .5em;
+}
+
+/* content + keyword returned search */
+.content-p, .keyword-p {
+  font-weight: bold;
+}
+
+
+
+
+/* FULL SCREEN */
+@media screen and (min-width:800px) {
+ 
+/* results card with content + image + map */
+  .search-list {
+    border-radius: 2em;
+  }
+
+/* contents in card */
+  .search-list-div{
+    padding: .5em;
+  }
+
+/* images + maps + content div */
+  .content-div {
+    display: flex;
+    flex-direction: row;
+  }
+
+/* left section of card (image + content) */
+  .left-side-image-content-search-page {
+    flex: 1;
+    padding:1em;
+  }
+
+/* right section of card (google map + location + button) */
+  .right-side-map-keyword {
+    flex: 1;
+    padding:1em;
+  }
+
+/* google map */
+  .map-image-search-page {
+    border-radius: .5em;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+/* images */
+  .search-list-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
