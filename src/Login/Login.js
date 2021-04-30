@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import AuthApiService from '../services/auth-api-service'
+import AuthApiService from '../services/auth-api-service';
 import TokenService from '../services/token-service';
 import './Login.css';
 
@@ -105,7 +105,7 @@ class LogIn extends Component {
             </form>
             <div className="link-register-div">
               <p align='right'> Don't Have An Account? <br></br>
-             <Link to="/signup" className="login-link"> Register </Link></p>
+                <Link to="/signup" className="login-link"> Register </Link></p>
               <p align='left'>Try The Site: <br></br> demo@demo.com <br></br>Password1</p>
             </div>
 
