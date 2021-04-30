@@ -2,9 +2,9 @@
  /* entire page + background */
  .list-page {
   background-image: url('/src/images/wavez-search-4.jpeg');
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  border-radius: 1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border-radius: 1em; */
   padding: 1em;
 }
 
@@ -58,7 +58,7 @@
     justify-content: center;
     align-items: center;
     margin: 1em;
-    padding: 2em;
+    padding: 30em;
   }
 
 

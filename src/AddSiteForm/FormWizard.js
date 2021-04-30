@@ -128,7 +128,7 @@ class FormWizard extends React.Component {
     window.cloudinary.createUploadWidget(
       {
         cloudName: 'wavez-search',
-        uploadPreset: 'k6ol9ng3',
+        uploadPreset: 'psbzbyfe',
       },
       (error, result) => {
         // console.log(result);

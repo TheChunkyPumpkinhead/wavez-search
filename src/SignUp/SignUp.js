@@ -66,7 +66,7 @@ class SignUp extends Component {
 
     return (
       <main>
-        <section className='sign-up-component'>
+        {/* <section className='sign-up-component'> */}
           <section className='sign-up-overlay'>
             <div className="sign-up-page">
 
@@ -105,7 +105,7 @@ class SignUp extends Component {
 
             </div>
           </section>
-        </section>
+        {/* </section> */}
       </main>
     );
   }

@@ -9,6 +9,7 @@ export default class Landing extends Component {
 
 
     <main role="main">
+        <section className='landing-overlay' >
       <header role="banner">
         <h1>Wavez Search</h1>
 
@@ -23,18 +24,19 @@ export default class Landing extends Component {
 
       <section class="button-section">
         <Link to="/login">
-          <button type="button">
+          <button type="button" class="login-button">
             Log in!
      </button>
      </Link>
           <Link to="/signup">
-            <button type="button">
+            <button type="button" class="login-button">
               Sign Up!
      </button>
           </Link>
       
        
 
+</section>
 </section>
 </main>
 

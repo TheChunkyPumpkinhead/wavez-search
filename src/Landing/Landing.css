@@ -2,10 +2,9 @@
 
 /* background image */
 .landing-overlay {
-  /* background-image: url('/src/images/wavez-search-1.jpg'); */
+  background-image: url('/src/images/wavez-search-pic.jpeg');
   background-size: cover;
-  border-radius: 1em;
-  display:flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -14,30 +13,30 @@
 }
 
 .landing-page-header {
-  color:white;
+  color: white;
   font-size: 1.5em;
 }
 
 .landing-content-div {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   width: 15em;
 }
 
 .landing-page-content {
-  color:white;
+  color: white;
   font-weight: bold;
 }
 
 .landing-btn {
-  background:orangered;
+  background: orangered;
   padding: .3em .6em;
   color: white;
   border: none;
   border-radius: .3em;
   font-size: 1.2em;
   font-family: sans-serif;
-  font-weight:bold;
+  font-weight: bold;
   margin: .3em;
 }
 
@@ -45,29 +44,30 @@
 
 
 /* FULL SCREEN */
-@media screen and (min-width:600px){
+@media screen and (min-width:600px) {
+
   /* background image */
   .landing-overlay {
     background-size: cover;
-    padding:15em;
+    padding: 30em;
   }
-  
+
   .landing-page-header {
     font-size: 2em;
   }
-  
+
   .landing-page-content {
     margin: 1em;
     padding: 2em;
     width: 100%;
   }
-    
+
   a:link {
-    text-decoration:none;
+    text-decoration: none;
   }
-  
+
   .landing-content-div {
     width: 100%;
   }
-  
-  }
+
+}

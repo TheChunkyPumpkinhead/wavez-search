@@ -3,7 +3,7 @@
 .login-overlay {
   background-image: url('/src/images/wavez-search-2.jpeg');
   background-size:cover;
-  border-radius: 1em;
+  /* border-radius: 1em; */
   display:flex; 
   flex-direction: column;
   justify-content: center;
@@ -52,7 +52,7 @@
     /* background image */
     .login-overlay {
       background-size:cover;
-      padding:15em;
+      padding:20em;
     }
   
     /* header text */

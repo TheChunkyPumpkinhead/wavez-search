@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import TokenService from '../services/token-service';
-// import './NavBar.css';
+import './NavBar.css';
 
 
 export default class NavBar extends React.Component {
