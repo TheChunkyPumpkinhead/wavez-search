@@ -79,11 +79,20 @@ Development Environment: Heroku, DBeaver
 
 ### 5. Wireframes (to do now)
 
-(Example) Landing Page
-:-------------------------:
-![Landing Page](/github-images/wireframes/landing-page-wireframe.png)
-Register Page
-![Register Page](/github-images/wireframes/register-page-wireframe.png)
+Landing Page
+![Landing Page](/github-images/screenshots/landing.png)
+
+Sign Up Page
+![Sign Up Page](/github-images/screenshots/sign-up.png)
+
+Log In Page
+![Log In Page](/github-images/screenshots/log-in.png)
+
+Accounts Page
+![Account Page](/github-images/screenshots/account.png)
+
+Site List Page
+![Site List Page](/github-images/screenshots/site-list.png)
 
 ### 6. Front-end Structure - React Components Map (to do later)
 
