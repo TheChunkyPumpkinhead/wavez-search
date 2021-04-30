@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TokenService from '../services/token-service';
+import TokenService from '../Services/token-service';
 import config from '../config';
 import './SiteList.css';
 import FormWizard from '../AddSiteForm/FormWizard';

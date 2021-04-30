@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import config from '../config';
-import TokenService from '../services/token-service';
+import TokenService from '../Services/token-service';
 import './WavezForm.css';
 
 

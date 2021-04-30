@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import config from '../config';
 import './Search.css';
 import StarRating from '../StarRating/StarRating';
-import TokenService from '../services/token-service';
+import TokenService from '../Services/token-service';
 
 class Search extends Component {
   constructor(props) {

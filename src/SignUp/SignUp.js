@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import AuthApiService from '../services/auth-api-service';
-import TokenService from '../services/token-service';
+import AuthApiService from '../Services/auth-api-service';
+import TokenService from '../Services/token-service';
 import './SignUp.css';
 
 class SignUp extends Component {
@@ -67,44 +67,44 @@ class SignUp extends Component {
     return (
       <main>
         {/* <section className='sign-up-component'> */}
-          <section className='sign-up-overlay'>
-            <div className="sign-up-page">
+        <section className='sign-up-overlay'>
+          <div className="sign-up-page">
 
-              <h1 className='sign-up-title'>Wavez Search </h1>
+            <h1 className='sign-up-title'>Wavez Search </h1>
 
-              <div className="form-div-reg">
-                <h3 className="header">Sign Up</h3>
-                <form className="signup-form" onSubmit={this.handleSubmit}>
-                  {errorMessage}
-                  <label className="signup-label">Email
+            <div className="form-div-reg">
+              <h3 className="header">Sign Up</h3>
+              <form className="signup-form" onSubmit={this.handleSubmit}>
+                {errorMessage}
+                <label className="signup-label">Email
                     <input
-                      className="sign-up-input"
-                      type="text"
-                      name="registerUsername"
-                      placeholder="email@email.com"
-                      required />
-                  </label>
+                    className="sign-up-input"
+                    type="text"
+                    name="registerUsername"
+                    placeholder="email@email.com"
+                    required />
+                </label>
 
-                  <label className="signup-label">Password
+                <label className="signup-label">Password
                    <input
-                      className="sign-up-input"
-                      type="password"
-                      name="registerPassword"
-                      placeholder="password"
-                      required />
-                  </label>
+                    className="sign-up-input"
+                    type="password"
+                    name="registerPassword"
+                    placeholder="password"
+                    required />
+                </label>
 
-                  <button type="submit" className="sign-up-button">Register</button>
-                </form>
+                <button type="submit" className="sign-up-button">Register</button>
+              </form>
 
-                <div className="link-register-div">
-                  <p> Already Have An Account?
+              <div className="link-register-div">
+                <p> Already Have An Account?
                   <Link to="/login" className="login-link">Log In</Link></p>
-                </div>
               </div>
-
             </div>
-          </section>
+
+          </div>
+        </section>
         {/* </section> */}
       </main>
     );

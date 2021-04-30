@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import WavezForm from '../WavezForm/WavezForm';
 import config from '../config';
-import TokenService from '../services/token-service';
+import TokenService from '../Services/token-service';
 import './Account.css';
 
 class Account extends Component {

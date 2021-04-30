@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import ReactStars from "react-rating-stars-component";
 import config from '../config';
-import TokenService from '../services/token-service';
+import TokenService from '../Services/token-service';
 import './StarRating.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWater } from '@fortawesome/free-solid-svg-icons';
@@ -93,7 +93,7 @@ class StarRating extends Component {
 
               return (
                 <div className={star} key={num}>
-                  <FontAwesomeIcon icon={ faWater} className='font-awesome' />
+                  <FontAwesomeIcon icon={faWater} className='font-awesome' />
                 </div>
               );
             })}
