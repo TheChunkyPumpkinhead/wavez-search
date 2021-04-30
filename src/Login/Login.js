@@ -106,7 +106,7 @@ class LogIn extends Component {
             <div className="link-register-div">
               <p align='right'> Don't Have An Account? <br></br>
                 <Link to="/signup" className="login-link"> Register </Link></p>
-              <p align='left'>Try The Site: <br></br> demo@demo.com <br></br>Password1</p>
+              <p align='left'>Try The Site: <br></br> 123@aol.com <br></br>Password1</p>
             </div>
 
           </div>

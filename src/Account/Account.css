@@ -1,73 +1,78 @@
 /* MOBILE STYLING */
 
- /* entire page and background */
- .accounts-page {
+/* entire page and background */
+.accounts-page {
   background-image: url('/src/images/wavez-search-5.jpeg');
 
   background-size: cover;
   background-repeat: no-repeat;
   /* border-radius: 1em; */
-  }
-  
-  /* header text */
-  .account-header,.account-p {
-    color:white;
-  }
-  
-  /* entire card with images + comments */
-  .saved-locations-box {
-    background:white;
-    margin: 1em 1em 0 1em;
-    border-radius: 1em;
-  }
+}
 
-   /* card */
-   .saved-locations {
-    padding: 1em;
-    max-width: 50em;
-  }
-  
-  /* images */
-  .acct-img {
-    max-width: 90%;
-    height: auto;
-    border-radius: .5em;
-  }
-  
- 
+/* header text */
+banner,
+.account-header,
+.account-p {
+  color: black;
+  background-color: white;
+  border-radius: 2em;
+  padding: 1em;
+}
+
+/* entire card with images + comments */
+.saved-locations-box {
+  background: white;
+  margin: 1em 1em 0 1em;
+  border-radius: 1em;
+}
+
+/* card */
+.saved-locations {
+  padding: 1em;
+  max-width: 50em;
+}
+
+/* images */
+.acct-img {
+  max-width: 90%;
+  height: auto;
+  border-radius: .5em;
+}
+
+
+
 
 /* FULL SCREEN */
-@media screen and (min-width:600px){
+@media screen and (min-width:600px) {
+
   /* entire page + background image */
   .accounts-page {
-    display:flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1em;
     padding: 30em;
   }
-  
+
   .saved-locations {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  
+
   .saved-locations-box {
-    display:flex; 
+    display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     border: none;
     margin: 6em 5em 0 5em;
-    padding:2em;
+    padding: 2em;
     border-radius: 3em;
   }
-  
+
   /* image-title-content-location (left side of box) */
-   .same {
-    flex:1;
-  } 
-  
+  .same {
+    flex: 1;
   }
-  
- 
+
+}

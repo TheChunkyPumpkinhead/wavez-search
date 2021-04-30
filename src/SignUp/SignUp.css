@@ -12,14 +12,14 @@
 }
 
 .sign-up-page {
-  color:white;
+  color:black;
 }
 
 .signup-form {
   display: flex;
   flex-direction: column;
   text-align: right;
-  color:white;
+  color:black;
   margin-bottom: 1em;
   font-weight: bold;
 }
@@ -46,7 +46,7 @@
   }
 
   .link-register-div {
-    color: white;
+    color: black;
     font-weight: bolder;
   }
   

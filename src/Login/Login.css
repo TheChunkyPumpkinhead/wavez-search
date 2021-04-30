@@ -14,14 +14,14 @@
 
 /* header text */
 .log-in-page {
-  color:white;
+  color:black;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
   text-align: right;
-  color:white;
+  color:black;
   margin-bottom: 1em;
   font-weight: bold;
 }

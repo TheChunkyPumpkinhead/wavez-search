@@ -4,7 +4,7 @@ This is a members only application for people who love to surf. Members can post
 
 ### 1. Working Prototype (to do later)
 
-(Example) You can access a working prototype of the React app here: https://your-app-client.herokuapp.com/ and Node app here: https://your-app-server.herokuapp.com/
+(Example) You can access a working prototype of the React app here: http://wavez-search-git-main-thechunkypumpkinhead.vercel.app and Node app here:   https://wavez-search.herokuapp.com/
 
 ### 2. User Stories (to do now)
 

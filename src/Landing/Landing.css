@@ -13,8 +13,9 @@
 }
 
 .landing-page-header {
-  color: white;
+  color: black;
   font-size: 1.5em;
+  background:none;
 }
 
 .landing-content-div {
