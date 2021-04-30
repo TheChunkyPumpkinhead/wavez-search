@@ -151,54 +151,13 @@ Comments (database table)
 ├── /ratings │ └── GET │ ├── / │ ├── /:location_id │ └── POST │ ├── / ├── /user_locations │ └── GET │ ├── / │ ├── /user │ ├── /:loc_id │ └── POST │ ├── /
 ```
 
-##### POST `/api/auth/login`
-
-```js
-    // req.body
-    {
-        "user_name": "demo@gmail.com",
-        "password": "Password1"
-    }
-
-    // res.body
-    {
-    "authToken": String,
-        "userId": 1
-    }
-```
-
-##### POST `/api/users/`
-
-```js
-    // req.body
-    {
-        "user_name": "demo@gmail.com",
-        "password": "123456"
-    }
-
-
-    // res.body
-    {
-        "id": 1,
-        "user_name": "demo@gmail.com"
-    }
-```
-
-### 9. Screenshots (to do later)
-
-(Example) Landing Page
-:-------------------------:
-![Landing Page](/github-images/screenshots/landing-page-screenshot.png)
-Register Page
-![Register Page](/github-images/screenshots/register-page-screenshot.png)
-
-### 10. Development Roadmap (to do later)
+### 9. Development Roadmap (to do later)
 
 This is v1.0 of the app, but future enhancements are expected to include:
 
 - (Example) add more functionality
 
-### 11. How to run it (done)
+### 10. How to run it (done)
 
 Use command line to navigate into the project folder and run the following in terminal
 
