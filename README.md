@@ -1,5 +1,5 @@
 # Capstone Project Title (to do now)
-
+### Wavez Search
 This is a members only application for people who love to surf. Members can post their favorite surf spots ,leave ratings, and save sites to their account where they can leave themselves notes.
 
 ### 1. Working Prototype (to do later)
