@@ -1,66 +1,65 @@
-# Capstone Project Title (to do now)
+
 ### Wavez Search
 This is a members only application for people who love to surf. Members can post their favorite surf spots ,leave ratings, and save sites to their account where they can leave themselves notes.
 
-### 1. Working Prototype (to do later)
+### 1. Working Prototype
 
 (Example) You can access a working prototype of the React app here: http://wavez-search-git-main-thechunkypumpkinhead.vercel.app and Node app here:   https://wavez-search.herokuapp.com/
 
-### 2. User Stories (to do now)
+### 2. User Stories 
 
 This app is for two types of users: a visitor and a logged-in user
 
-###### (Example) Landing Page (Importance - High) (Est: 1h)
+###### Landing Page 
 
 - as a visitor
 - I want to understand what I can do with this app (or sign up, or log in)
 - so I can decide if I want to use it
 
-###### (Example) Login Page (Importance - High) (Est: 3h)
+###### Login Page
 
 - As a returning register user
 - I want to enter my password and username to use this app,
 - So I can have access to my account.
 
-###### (Example) Sign Up (Importance - High) (Est: 3h)
+###### Sign Up 
 
 - As a visitor
 - I want to register to use this app
 - So I can create a personal account.
 
-###### List Of Sites Page (Importance - Medium) (Est: 2h)
+###### List Of Sites Page 
 
 *as a visitor
 *I want to learn about all the available sites to visit per state
 \*so I can decide if I want to visit
 
-###### Star Ratings (Importance - Medium) (Est: 1h)
+###### Star Ratings 
 
 *as a visiting user
 *I want to rate places I've visited
 \*so I can help others decide on places to visit
 
-###### Account Page (Importance - High) (Est: 4h)
+###### Account Page
 
 *as a logged in user
 *I want to see places I've saved to my account
 *I want to add comments to places I've saved to my account
 *so I can easily find the places I'm interested in
 
-###### Upload New Site (Importance - High) (Est: 4h)
+###### Upload New Site
 
 *as a logged in user
 *I want to add places I've been
 *I want to add images, content, and a location
 *so I can share locations I've been with other users
 
-###### Search Sites (Importance - High) (Est: 2h)
-
+###### Search Sites 
 *as a logged in user
 *I want to search places by location
 \*so I can find locations I'm interested in going to
 
-### 3. Functionality (to do now)
+### 3. Functionality
 
 The app's functionality includes:
 
@@ -71,13 +70,13 @@ The app's functionality includes:
   *A registered user has the ability to add new surf sites
   *A registered user has the ability to add images and content when adding new surf sites
 
-### 4. Technology (done)
+### 4. Technology
 
 Front-End: HTML5, CSS3, JavaScript ES6, React
 Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
 Development Environment: Heroku, DBeaver
 
-### 5. Wireframes (to do now)
+### 5. Wireframes 
 
 Landing Page
 ![Landing Page](/github-images/screenshots/landing.png)
@@ -108,7 +107,7 @@ Site List Page
     - **WavezForm.js** (stateful) -
     - **StarRating.js** (stateful) -
 
-### 7. Back-end Structure - Business Objects (to do later)
+### 7. Back-end Structure -
 
 Users (database table)
 *id (auto-generated)
@@ -151,7 +150,7 @@ Comments (database table)
 ├── /ratings │ └── GET │ ├── / │ ├── /:location_id │ └── POST │ ├── / ├── /user_locations │ └── GET │ ├── / │ ├── /user │ ├── /:loc_id │ └── POST │ ├── /
 ```
 
-### 9. Development Roadmap (to do later)
+### 9. Development Roadmap 
 
 This is v1.0 of the app, but future enhancements are expected to include:
 
